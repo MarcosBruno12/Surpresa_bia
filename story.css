@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/Fundostory.jpg') no-repeat center center / cover;
+}
+
+.title {
+    font-size: 2.5rem; /* Tamanho grande do título */
+    color: rgba(11, 37, 182, 0.685); /* Cor azul com opacidade */
+    font-family: 'Poppins', sans-serif; /* Fonte vibrante */
+    font-weight: 600; /* Negrito */
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Sombra no texto para dar mais destaque */
+    position: relative; /* Define a posição relativa do título */
+    top: 20px; /* Move o título para baixo a partir da sua posição original */
+    margin-bottom: 10px; /* Reduzir o espaço abaixo do título */
+}
+
+/* Estilizando a declaração de amor */
+.declaration {
+    font-size: 3rem; /* Grande tamanho do texto */
+    color: white; /* Cor branca */
+    font-family: 'Poppins', sans-serif; /* Fonte vibrante */
+    font-weight: 600; /* Negrito */
+    text-align: center;
+    text-shadow: 0 0 10px #ff3366, 0 0 20px #ff3366, 0 0 30px #ff3366; /* Sombra forte para destacar */
+    line-height: 1.6;
+    animation: glowText 1.5s ease-in-out infinite alternate; /* Efeito de brilho no texto */
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+/* Animação de brilho */
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 15px #ff3366, 0 0 25px #ff3366, 0 0 35px #ff3366;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff3366, 0 0 30px #ff3366, 0 0 40px #ff3366;
+    }
+}
+
+.story-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.description {
+    text-align: center;
+    font-size: 1.2rem; /* Aumentar o tamanho da fonte para tornar o texto mais legível */
+    color: white; /* Cor branca para o texto */
+    font-family: 'Poppins', sans-serif; /* Fonte vibrante e moderna */
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.8; /* Melhorar o espaçamento entre as linhas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para dar mais destaque */
+    width: 100%; /* Ajuste para garantir que o texto ocupe a largura da tela em dispositivos móveis */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .description {
+        font-size: 1rem; /* Ajustar o tamanho do texto para telas pequenas */
+        padding: 15px; /* Ajustar o padding */
+    }
+
+    .declaration {
+        font-size: 2rem; /* Ajuste do tamanho do texto em telas menores */
+        padding: 10px;
+    }
+}
+.title2{
+    color: rgb(214, 25, 0);
+    
+}
+
+/* Importando uma fonte diferenciada */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Importando uma fonte diferenciada */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Importando uma fonte diferenciada */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.time-identifier {
+    text-align: center;
+    font-size: 2rem; /* Tamanho maior para chamar mais atenção */
+    color: #e63946; /* Cor vermelha suave para combinar com o tema */
+    font-family: 'Dancing Script', cursive; /* Fonte mais romântica */
+    font-weight: bold; /* Deixar a fonte em negrito para maior impacto */
+    margin-top: 30px; /* Aumentando o espaço acima */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Sombras mais pronunciadas */
+    letter-spacing: 1px; /* Aumentar o espaçamento entre as letras */
+        border-radius: 15px; /* Bordas arredondadas */
+    background: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente para destaque */
+    max-width: 90%; /* Limitar a largura para telas pequenas */
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; /* Garantir que o padding não cause expansão no tamanho do box */
+    animation: fadeIn 2s ease-out; /* Animação suave ao aparecer */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .time-identifier {
+        font-size: 1.5rem; /* Ajuste no tamanho para telas pequenas */
+        padding: 10px 15px; /* Ajustar o padding para telas menores */
+    }
+}
+
+/* Estilos para corações */
+#hearts-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#hearts-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Para evitar interação com os corações */
+}
+
+.heart {
+    position: absolute;
+    width: 60px; /* Aumenta o tamanho do coração */
+    height: 60px;
+    background: url('foto2.jpg') no-repeat center center;
+    background-size: contain;
+    animation: float 15s linear infinite; /* Aumenta o tempo da animação para espaçar mais */
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh) translateX(var(--start-x));
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100px) translateX(var(--end-x));
+        opacity: 0;
+    }
+}

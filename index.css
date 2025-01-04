@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('images/Fotocoração.avif') no-repeat center center / cover;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparência de 80% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-button {
+    position: relative;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff7f7f, #ff4f4f); /* Cor gradiente vibrante */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-button:hover {
+    background-color: #ff4f4f;
+    transform: scale(1.05); /* Efeito de ampliação no hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.story-button:active {
+    transform: scale(1); /* Mantém o tamanho original ao clicar */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .story-button {
+        font-size: 1.2rem;
+        padding: 15px 25px;
+    }
+
+}
+
